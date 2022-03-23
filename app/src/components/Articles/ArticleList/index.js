@@ -4,7 +4,7 @@ import Article from "../Article";
 
 const Wrapper = styled.div`
   display: grid;
-  gap: .5rem;
+  gap: 1.5rem;
   padding: 10px;
 `;
 
@@ -21,7 +21,7 @@ const ArticleList = ({
     setArticle(selectedArticle);
   };
   return (
-    <Wrapper>
+    <Wrapper data-testid="listWrapper">
       {articles.map((article, index) => (
         <Article
           article={article}

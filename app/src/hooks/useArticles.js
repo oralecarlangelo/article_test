@@ -1,5 +1,5 @@
 import { useQuery, gql } from "@apollo/client";
-const GET_ARTICLES = gql`
+export const GET_ARTICLES = gql`
   query articles($title: String) {
     articles(title: $title) {
       title
